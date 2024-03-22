@@ -159,13 +159,11 @@
 
  .banner {
    background: url(../imagenes/imagenauditoria.jpg) fixed (center / cover);
-   height: 1200px;
+   height: 1000px;
    position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-top: 0cm;
-   padding: 0cm;
 
    &::before {
      content: "";
@@ -367,7 +365,7 @@
 
  .banner5 {
    background: url(../imagenes/imagencontrato.jpg) fixed (center / cover);
-   height: 1300px;
+   height: 1200px;
    position: relative;
    display: flex;
    align-items: center;
@@ -432,23 +430,6 @@
    font-size: 1.25em;
    font-family: 'Roboto', sans-serif;
  }
-
- .aseh3custom {
-
-  font-size: 6em;
- }
-
- .h3custom { font-size: 6em;}
-
- .conh3custom {
-
-  font-size: 10em;
-
-
- }
-
-
-
 
  .fondofotter {
 
@@ -661,6 +642,7 @@
   position: relative;
   top: -185px;
   left: 10px;
+  
 
   /*La transicion va despues del codigo JS*/
   transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
@@ -718,7 +700,7 @@
 @media screen and (max-width: 850px){
 
   .mainregister{
-      margin-top: 50px;
+      margin-top: 0%;
   }
 
   .caja__trasera{
