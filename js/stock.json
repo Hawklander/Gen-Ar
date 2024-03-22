@@ -1,0 +1,68 @@
+[
+    {
+        "id": "App-1",
+        "titulo": "App-Liquidación",
+        "imagen": "../imagenes/productos/liquidacion.png",
+        "descripcion" :"Aplicación, de auditoria de facturación para liquidación de comprobantes. INCLUYE 10 USUARIOS - Valor C/IVA.",
+        "categoria" : {
+            "nombre" : "App1",
+            "id": "App"
+        },
+        "precio": 50000
+    },
+    {
+        "id": "App-2",
+        "titulo": "App-Convenios",
+        "imagen": "../imagenes/productos/convenios.jpg",
+        "descripcion" :"Aplicación para seguimiento de negociación, arancelamientos, modificaciones de adendas. INCLUYE 5 USUARIOS - Valor C/IVA.",
+        "categoria" : {
+            "nombre" : "App2",
+            "id": "App"
+        },
+        "precio": 35000
+    },
+    {
+        "id": "App-3",
+        "titulo": "App-RRHH",
+        "imagen": "../imagenes/productos/rrhh.png",
+        "descripcion" :"Aplicación, seguimiento de empleado, sueldos, permisos, asistencia, horario, INCLUYE 2 USUARIOS - Valor C/IVA.",
+        "categoria" : {
+            "nombre" : "App3",
+            "id": "App"
+        },
+        "precio": 50000
+    },
+    {
+        "id": "App-4",
+        "titulo": "App-Vacaciones",
+        "imagen": "../imagenes/productos/vacaciones.png",
+        "descripcion" :"Módulo para aplicación RRHH., registro de vacaciones. Valor C/IVA.",
+        "categoria" : {
+            "nombre" : "App4",
+            "id": "App"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "App-5",
+        "titulo": "App-Turnos",
+        "imagen": "../imagenes/productos/turnos.jpg",
+        "descripcion" :"Aplicación, turnero, cronogramas, altas, bajas, notas. Valor C/IVA.",
+        "categoria" : {
+            "nombre" : "App5",
+            "id": "App"
+        },
+        "precio": 40000
+    },
+    {
+        "id": "App-6",
+        "titulo": "Key-Usuario",
+        "imagen": "../imagenes/productos/llave.png",
+        "descripcion" :"Key, para usuarios adicionales (RRHH, Convenios, Liquidación). Valor C/IVA.",
+        "categoria" : {
+            "nombre" : "App6",
+            "id": "App"
+        },
+        "precio": 4000
+    }
+]

@@ -1,0 +1,782 @@
+ /* importaciones  */
+
+ @import "./partials/queries";
+ @import "./partials/reset";
+ @import "./partials/variables";
+
+
+ /* Fuentes desde import  */
+ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+ @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+
+
+
+ /* Barra de navegacion */
+
+ header {
+   text-align: center;
+   text-align: justify;
+
+
+ }
+
+ .navper ul a {
+   font-family: 'Raleway', sans-serif;
+   font-size: x-large;
+   font-weight: 700;
+
+ }
+
+
+ .logogen {
+
+   width: 10em;
+   margin-left: -1.8em;
+
+ }
+
+
+
+
+ /*
+    ** Efecto en Navbar
+*/
+ *,
+ *:before,
+ *::after {
+   box-sizing: border-box;
+ }
+
+
+ .link {
+   position: relative;
+   text-decoration: none;
+   text-align: center;
+   cursor: pointer;
+   width: fit-content;
+   z-index: 0;
+   transition: all 450ms ease;
+
+   &::after,
+   &::before {
+     content: '';
+     display: block;
+     position: absolute;
+     transition: width 540ms, opacity 300ms ease;
+   }
+ }
+
+ .link--1 {
+   padding: 0 6px;
+
+   &::before,
+   &::after {
+     top: 0;
+     bottom: 0;
+     margin: auto 0;
+     height: 0.1em;
+     width: 0;
+   }
+
+   &::before {
+     left: 0;
+   }
+
+   &::after {
+     background-color: $pink;
+     right: 0;
+   }
+
+   &:hover {
+     color: $pink;
+
+     &::before {
+       width: 60%;
+       transition: width 250ms ease;
+       background-color: $pink;
+     }
+
+     &::after {
+       width: 100%;
+       background-color: transparent;
+     }
+   }
+ }
+
+ /* LINK 2    */
+ .link--2 {
+
+   &::before,
+   &::after {
+     height: 0.1em;
+     bottom: -1px;
+   }
+
+   &::before {
+     width: 0;
+     background-color: $lemon;
+   }
+
+   &::after {
+     width: 100%;
+     border: 1px solid $lemon;
+     border-top: 0;
+     opacity: 0;
+   }
+
+   &:hover {
+     color: $lemon;
+
+     &::before {
+       width: 0;
+       animation: width 1500ms ease forwards;
+     }
+
+     &::after {
+       opacity: 1;
+     }
+   }
+ }
+
+ @keyframes width {
+   0% {
+     width: 0;
+   }
+
+   50% {
+     width: 100%;
+   }
+
+   100% {
+     width: 70%;
+   }
+ }
+
+
+
+ /* configuracion de estilo Primer HERO banner */
+
+ .banner {
+   background: url(../imagenes/imagenauditoria.jpg) fixed (center / cover);
+   height: 1000px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &::before {
+     content: "";
+     height: 100%;
+     width: 100%;
+     background: $oscuro;
+     opacity: 0.8;
+   }
+ }
+
+
+ .banner1 {
+   background: url(../imagenes/imagencerebro.png) fixed (center / cover);
+   height: 700px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow-x: hidden;
+
+   &::before {
+     content: "";
+     height: 100%;
+     width: 100%;
+     background: $oscuro;
+     opacity: 0.8;
+   }
+ }
+
+ .banner__info {
+   padding: 0.3em;
+   position: absolute;
+   width: 100%;
+   max-width: 700px;
+   text-align: center;
+   color: $blanco;
+ }
+
+
+
+ .banner__title {
+   line-height: 1.5em;
+   font-size: 3em;
+   font-family: "Roboto", sans-serif;
+ }
+
+
+
+ .banner__p {
+   line-height: 2em;
+   font-size: 1.2em;
+   font-family: 'Roboto', sans-serif;
+ }
+
+
+ /* Boton configuracion general */
+
+ .btn3 a {
+   text-decoration: none;
+   color: azure;
+ }
+
+ .btn5 {
+   margin-top: 200px;
+ }
+
+ .btncustom {
+   margin-top: 1.8em;
+ }
+
+
+
+ /* segundo Hero banner asesoria */
+
+ .banner2 {
+   background: url(../imagenes/imagenasesor.jpg) fixed (center / cover);
+   height: 850px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &::before {
+     content: "";
+     height: 100%;
+     width: 100%;
+     background: $oscuro;
+     opacity: 0.8;
+   }
+ }
+
+ .banner2__info {
+   padding: 0.3em;
+   position: absolute;
+   width: 100%;
+   max-width: 700px;
+   text-align: center;
+   color: $blanco;
+ }
+
+ .banner2__title {
+   line-height: 1.5;
+   font-size: 2em;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 100px;
+ }
+
+ .banner2__p {
+   line-height: 2em;
+   font-size: 0.9;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 15px;
+ }
+
+ /* Banner de contactos */
+
+ .banner3 {
+   background: url(../imagenes/imagencontacto.png) fixed (center / cover);
+   height: 1080px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow-x: hidden;
+
+   &::before {
+     content: "";
+     height: 100%;
+     width: 100%;
+     background: $oscuro;
+     opacity: 0.8;
+   }
+ }
+
+ .banner3__info {
+   padding: 0.3em;
+   position: absolute;
+   width: 100%;
+   max-width: 700px;
+   text-align: center;
+   color: $blanco;
+ }
+
+ .banner3__title {
+   line-height: 1.5;
+   font-size: 2em;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 70px;
+ }
+
+ .banner3__p {
+   line-height: 2em;
+   font-size: 0.9;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ /* banner de sobre nosotros */
+
+ .banner4 {
+   background: url(../imagenes/imagenquinenes.jpg) fixed (center / cover);
+   height: 1080px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &::before {
+     content: "";
+     height: 100%;
+     width: 100%;
+     background: $oscuro;
+     opacity: 0.8;
+   }
+ }
+
+ .banner4__info {
+   padding: 0.3em;
+   position: absolute;
+   width: 100%;
+   max-width: 700px;
+   text-align: center;
+   color: $blanco;
+ }
+
+ .banner4__title {
+   line-height: 1.5;
+   font-size: 2em;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 70px;
+ }
+
+ .banner4__p {
+   line-height: 2em;
+   font-size: 0.9;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ /* Banner de servicios */
+
+ .banner5 {
+   background: url(../imagenes/imagencontrato.jpg) fixed (center / cover);
+   height: 950px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &::before {
+     content: "";
+     height: 100%;
+     width: 100%;
+     background: $oscuro;
+     opacity: 0.8;
+   }
+ }
+
+ .banner5__info {
+   padding: 0.3em;
+   position: absolute;
+   width: 100%;
+   max-width: 700px;
+   text-align: center;
+   color: $blanco;
+ }
+
+ .banner5__title {
+   line-height: 1.5;
+   font-size: 2em;
+   font-family: 'Roboto', sans-serif;
+   margin-top: 70px;
+ }
+
+ .banner5__p {
+   line-height: 2em;
+   font-size: 0.9;
+   font-family: 'Roboto', sans-serif;
+ }
+
+
+
+ .fotopintura {
+
+   width: 40%;
+   border-radius: 70%;
+   width: 20%;
+
+ }
+
+ .titulo__sabrenosotros {
+
+   font-weight: 600;
+
+ }
+
+ .logosocial {
+
+   width: 2em;
+
+
+ }
+
+ .lead {
+
+   font-size: 1.25em;
+   font-family: 'Roboto', sans-serif;
+ }
+
+ .fondofotter {
+
+   background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ /*formulario de contacto inicio*/
+
+ #fs-frm input,
+ #fs-frm select,
+ #fs-frm textarea,
+ #fs-frm fieldset,
+ #fs-frm optgroup,
+ #fs-frm label,
+ #fs-frm #card-element:disabled {
+   font-family: inherit;
+   font-size: 100%;
+   color: inherit;
+   border: none;
+   border-radius: 0;
+   display: block;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+
+ }
+
+ #fs-frm label,
+ #fs-frm legend,
+ #fs-frm ::placeholder {
+   font-size: .825rem;
+   margin-bottom: .5rem;
+   padding-top: .2rem;
+   display: flex;
+   align-items: baseline;
+ }
+
+ /* border, padding, margin, width */
+ #fs-frm input,
+ #fs-frm select,
+ #fs-frm textarea,
+ #fs-frm #card-element {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   background-color: rgba(10, 10, 10, 0.9);
+   padding: .75em 1rem;
+   margin-bottom: 1.5rem;
+ }
+
+ #fs-frm input:focus,
+ #fs-frm select:focus,
+ #fs-frm textarea:focus {
+   background-color: rgba(5, 0, 0, 0.253);
+   outline-style: solid;
+   outline-width: thin;
+   outline-color: rgb(49, 25, 25);
+   outline-offset: -1px;
+ }
+
+ #fs-frm [type="text"],
+ #fs-frm [type="email"] {
+   width: 100%;
+ }
+
+ #fs-frm [type="button"],
+ #fs-frm [type="submit"],
+ #fs-frm [type="reset"] {
+   width: auto;
+   cursor: pointer;
+   -webkit-appearance: button;
+   -moz-appearance: button;
+   appearance: button;
+ }
+
+ #fs-frm [type="button"]:focus,
+ #fs-frm [type="submit"]:focus,
+ #fs-frm [type="reset"]:focus {
+   outline: none;
+ }
+
+ #fs-frm [type="submit"],
+ #fs-frm [type="reset"] {
+   margin-bottom: 0;
+ }
+
+ #fs-frm select {
+   text-transform: none;
+ }
+
+ #fs-frm [type="checkbox"] {
+   -webkit-appearance: checkbox;
+   -moz-appearance: checkbox;
+   appearance: checkbox;
+   display: inline-block;
+   width: auto;
+   margin: 0 .5em 0 0 !important;
+ }
+
+ #fs-frm [type="radio"] {
+   -webkit-appearance: radio;
+   -moz-appearance: radio;
+   appearance: radio;
+ }
+
+ /* address, locale */
+ #fs-frm fieldset.locale input[name="city"],
+ #fs-frm fieldset.locale select[name="state"],
+ #fs-frm fieldset.locale input[name="postal-code"] {
+   display: inline;
+ }
+
+ #fs-frm fieldset.locale input[name="city"] {
+   width: 52%;
+ }
+
+ #fs-frm fieldset.locale select[name="state"],
+ #fs-frm fieldset.locale input[name="postal-code"] {
+   width: 20%;
+ }
+
+ #fs-frm fieldset.locale input[name="city"],
+ #fs-frm fieldset.locale select[name="state"] {
+   margin-right: 3%;
+ }
+
+ .h3custom {
+
+   margin-top: 2em !important;
+ }
+
+
+
+
+
+ //FORMULARIO LOGIN Y REGISTER
+
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: auto;
+  background-color: black;
+}
+
+.contenedor__todo{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+
+.caja__trasera{
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color:  $oscuro;
+
+}
+
+.caja__trasera div{
+  margin: 100px 40px;
+  color: white;
+  transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+  margin-top: 30px;
+}
+
+.caja__trasera div h3{
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.caja__trasera div p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.caja__trasera button{
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  font-size: 14px;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+  background: #fff;
+  color: #46A2FD;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+
+  /*La transicion va despues del codigo JS*/
+  transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+  width: 100%;
+  padding: 80px 20px;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #46A2FD;
+}
+
+.contenedor__login-register form input{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #F2F2F2;
+  font-size: 16px;
+  outline: none;
+}
+
+.contenedor__login-register form button{
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #46A2FD;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  outline: none;
+}
+
+
+
+
+.formulario__login{
+  opacity: 1;
+  display: block;
+}
+.formulario__register{
+  display: none;
+}
+
+
+@media screen and (max-width: 850px){
+
+  .mainregister{
+      margin-top: 50px;
+  }
+
+  .caja__trasera{
+      max-width: 350px;
+      height: 300px;
+      flex-direction: column;
+      margin: auto;
+  }
+
+  .caja__trasera div{
+      margin: 0px;
+      position: absolute;
+  }
+
+
+  /*Formularios*/
+
+  .contenedor__login-register{
+      top: -10px;
+      left: -5px;
+      margin: auto;
+  }
+
+  .contenedor__login-register form{
+      position: relative;
+  }
+}
+/*CATOLOGO */
+
+.bodyCatalogo {
+
+background-color: rgba(0, 0, 0, 0.863);
+
+}
+
+
+.orden {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+h1 {
+  text-align: center;
+  color: #e0e1e2c7;
+}
+.carritoDiv {
+  display: flex;
+  justify-content: center;
+}
+.carrito {
+  padding: 15px;
+  background-color: #04A1A8;
+  border-radius: 15px;
+  border: 0;
+}
+
+.ordenCompra {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 50px 10;
+}
+
+.cuerpo {
+  
+  justify-content: center;
+}
+
+.cardEstilo{
+  margin: 2%;
+}
+.btnAgregar{
+  margin: 1rem;
+}
+
+
+.cardestilo {
+  background-color:rgba(192, 192, 192, 0.829); 
+}
+
