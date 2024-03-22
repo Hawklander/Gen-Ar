@@ -159,11 +159,13 @@
 
  .banner {
    background: url(../imagenes/imagenauditoria.jpg) fixed (center / cover);
-   height: 1000px;
+   height: 1200px;
    position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-top: 0cm;
+   padding: 0cm;
 
    &::before {
      content: "";
@@ -365,7 +367,7 @@
 
  .banner5 {
    background: url(../imagenes/imagencontrato.jpg) fixed (center / cover);
-   height: 950px;
+   height: 1300px;
    position: relative;
    display: flex;
    align-items: center;
@@ -430,6 +432,23 @@
    font-size: 1.25em;
    font-family: 'Roboto', sans-serif;
  }
+
+ .aseh3custom {
+
+  font-size: 6em;
+ }
+
+ .h3custom { font-size: 6em;}
+
+ .conh3custom {
+
+  font-size: 10em;
+
+
+ }
+
+
+
 
  .fondofotter {
 

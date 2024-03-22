@@ -73,6 +73,7 @@ header {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  width: -moz-fit-content;
   width: fit-content;
   z-index: 0;
   transition: all 450ms ease;
@@ -154,13 +155,11 @@ header {
 /* configuracion de estilo Primer HERO banner */
 .banner {
   background: url(../imagenes/imagenauditoria.jpg) fixed center/cover;
-  height: 1200px;
+  height: 1000px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0cm;
-  padding: 0cm;
 }
 .banner::before {
   content: "";
@@ -344,7 +343,7 @@ header {
 /* Banner de servicios */
 .banner5 {
   background: url(../imagenes/imagencontrato.jpg) fixed center/cover;
-  height: 1300px;
+  height: 950px;
   position: relative;
   display: flex;
   align-items: center;
@@ -395,20 +394,8 @@ header {
 }
 
 .lead {
-  font-size: 1.25em;
+  font-size: 10cm;
   font-family: "Roboto", sans-serif;
-}
-
-.aseh3custom {
-  font-size: 6em;
-}
-
-.h3custom {
-  font-size: 6em;
-}
-
-.conh3custom {
-  font-size: 10em;
 }
 
 .fondofotter {
@@ -432,6 +419,14 @@ header {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+#fs-frm ::-moz-placeholder {
+  font-size: 0.825rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.2rem;
+  display: flex;
+  align-items: baseline;
 }
 
 #fs-frm label,
@@ -731,6 +726,4 @@ h1 {
 
 .cardestilo {
   background-color: rgba(192, 192, 192, 0.829);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
